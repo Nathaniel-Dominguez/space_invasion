@@ -14,20 +14,20 @@ function preload() {
 	game.physics.startSystem(Phaser.Physics.ARCADE);
 
 	// Images for later use
-	game.load.image('bg', '../assets/img/cool-space-background.jpg');
-	game.load.image('player', '../assets/img/ship.png');
-	game.load.image('laser', '../assets/img/beam.png');
-	game.load.image('missile', '../assets/img/missile.png');
-	game.load.image('enemy', '../assets/img/enemy.png');
+	game.load.image('bg', './assets/img/cool-space-background.jpg');
+	game.load.image('player', './assets/img/ship.png');
+	game.load.image('laser', './assets/img/beam.png');
+	game.load.image('missile', './assets/img/missile.png');
+	game.load.image('enemy', './assets/img/enemy.png');
 
 	// Load animations
-	game.load.spritesheet('smallboom', '../assets/img/explosion.png', 64, 64);
+	game.load.spritesheet('smallboom', './assets/img/explosion.png', 64, 64);
 
 	// Load audio files for later use
-	game.load.audio('music', '../assets/audio/Shadelike.mp3');
-	game.load.audio('pewpew', ['../assets/audio/laser.ogg', '../assets/audio/laser.mp3']);
-	game.load.audio('launch', '../assets/audio/Missile.mp3');
-	game.load.audio('boom', ['../assets/audio/explosion.oog', '../assets/audio/explosion.mp3']);
+	game.load.audio('music', './assets/audio/Shadelike.mp3');
+	game.load.audio('pewpew', ['./assets/audio/laser.ogg', '../assets/audio/laser.mp3']);
+	game.load.audio('launch', './assets/audio/Missile.mp3');
+	game.load.audio('boom', ['./assets/audio/explosion.oog', '../assets/audio/explosion.mp3']);
 }
 
 function create() {
